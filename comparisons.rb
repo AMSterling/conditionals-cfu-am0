@@ -22,24 +22,31 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # this should print: "Is numberTeachers greater than numberStudents?" false
 
 # YOU DO: print the result of the comparison: is number_teachers less than number_students?
+puts "Is number_teachers less than number_students?", number_teachers < number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_teachers equal to string_teachers?
+puts "Is number_teachers equal to string_teachers?", number_teachers == string_teachers
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_teachers not equal to number_students?
+puts "Is number_teachers not equal to number_students?", number_teachers != number_students
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 20?
+puts "Is number_students greater than or equal to 20?", number_students >= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students greater than or equal to 21?
+puts "Is number_students greater than or equal to 21?", number_students >= 21
 # this should print: false
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 20?
+puts "Is number_students less than or equal to 20?", number_students <= 20
 # this should print: true
 
 # YOU DO: print the result of the comparison: is number_students less than or equal to 21?
+puts "Is number_students less than or equal to 21?", number_students <= 21
 # this should print: true
 
 
@@ -52,22 +59,22 @@ puts "Is number_teachers greater than number_students?", number_teachers > numbe
 # Be as technically precise as possible, but don't just copy and paste a definition from the readings.
 # Make sure YOU can explain it that way!
 
-puts 4 < 9
-#YOU DO: Explain.
+puts "Is four less than nine?", 4 < 9
+#YOU DO: Explain. true because 4 is less than 9.
 
 books = 3
-puts 4 < books
-# YOU DO: Explain.
+puts "Are there more than four books?", 4 < books
+# YOU DO: Explain. false because the number of books is less than 4, not greater than 4.
 
 friends = 6
 siblings = 2
-puts friends > siblings
-# YOU DO: Explain.
+puts "Does Mary have more fiends than siblings?", friends > siblings
+# YOU DO: Explain. true because 6 is greater than 2.
 
 attendees = 9;
 meals = 8;
-puts attendees != meals
-# YOU DO: Explain.
+puts "Are there enough meals for attendees?" , attendees != meals
+# YOU DO: Explain. true because the numbers are not equal. Both would have to 9 or both would have to be 8.
 
 
 #-------------------
@@ -79,9 +86,11 @@ finished_homework = false
 
 # EXAMPLE:
 # Determine if the user is hungry and has completed their homework
-is_hungry && finished_homework
+puts "User is_hungry and has finished_homework?", is_hungry && finished_homework
+# false (at least one is false)
 # Determine if the user is hungry or has completed their homework
-is_hungry || finished_homework
+puts "User is_hungry or has finished_homework", is_hungry || finished_homework
+# true (at least one or both is true)
 
 loves_to_play = true
 loves_dog_park = false
@@ -90,15 +99,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
-
+puts "Dog loves_to_play and loves_treats?", loves_to_play && loves_treats
+# true
 # Determine if the dog loves to play and loves the dog park
-
+puts "Dog loves_to_play and loves_dog_park?", loves_to_play && loves_dog_park
+# false
 
 # Determine if the dog loves to play or loves the dog park
-
-
+puts "Dog loves_to_play or loves_dog_park?", loves_to_play || loves_dog_park
+# true
 # Determine if the dog loves to play and is a puppy
-
+puts "Dog loves_to_play and is a puppy?", loves_to_play && age <= 2
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER:I had guesses correct in Atom but did not add code to properly populate when running.
